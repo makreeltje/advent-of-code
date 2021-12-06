@@ -2,14 +2,12 @@ package com.meelsnet.day1;
 
 import com.meelsnet.utils.ReadFile;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Part2 {
     public static void main(String[] args) throws FileNotFoundException {
-        File input = ReadFile.readFile("input-day1.txt");
-        Scanner reader = new Scanner(input);
+        Scanner reader = ReadFile.readFile("input-day1");
 
         var oldValue = 564;
         var numberOfTimesIncreased = 0;

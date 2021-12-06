@@ -2,14 +2,12 @@ package com.meelsnet.day2;
 
 import com.meelsnet.utils.ReadFile;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Part2 {
     public static void main(String[] args) throws FileNotFoundException {
-        File input = ReadFile.readFile("input-day2.txt");
-        Scanner reader = new Scanner(input);
+        Scanner reader = ReadFile.readFile("input-day2");
 
         var depth = 0;
         var horizontal = 0;
